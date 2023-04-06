@@ -1,0 +1,31 @@
+/* Write your CSS here */
+:root {
+  --clr-border: #b5b7c4;
+  --clr-border-dark: #999ba8;
+}
+.appointment-item {
+  border: 1px solid var(--clr-border);
+  border-radius: 15px;
+  padding: 0.7em;
+  width: 240px;
+}
+.appointment-item p {
+  margin-block: 5px;
+}
+.appointment-item > p {
+  color: var(--clr-border-dark);
+  font-size: 0.85rem;
+}
+.list-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-title-container p {
+  font-weight: bold;
+}
+.star-btn {
+  border: none;
+  outline-color: transparent;
+  background-color: transparent;
+}

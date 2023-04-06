@@ -1,0 +1,101 @@
+/* Write your CSS here */
+:root {
+  --clr-text: #ffffff;
+  --clr-dark: #171f46;
+  --clr-btn-bg: #8b5cf6;
+  --clr-border-light: #d6d8e7;
+  --clr-border: #b5b7c4;
+  --clr-border-dark: #999ba8;
+  --clr-btn-bg-light: #9897f0;
+}
+.container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #fbc7d4, #9796f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 2em;
+}
+.container-wrapper {
+  width: 90%;
+  height: auto;
+  border-radius: 15px;
+  padding: 0 3em 2em;
+  background-color: var(--clr-text);
+}
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-block: 1.4em;
+}
+.form-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+h1 {
+  margin-top: 10px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+label {
+  color: var(--clr-border);
+  font-size: 0.86rem;
+}
+#appointment-title,
+#appointment-date {
+  padding: 0.55em;
+  border: 1px solid var(--clr-border);
+  outline-color: var(--clr-border-dark);
+  margin-bottom: 1.7em;
+  border-radius: 5.6px;
+  font-size: 1.1rem;
+}
+.add-btn {
+  align-self: flex-start;
+  border: none;
+  outline: transparent;
+  background-color: var(--clr-btn-bg);
+  border-radius: 4px;
+  color: var(--clr-text);
+  padding: 0.5em 1em;
+}
+
+.appointment-image {
+  min-height: 60%;
+}
+.appointment-image img {
+  max-width: 100%;
+}
+hr {
+  border-top: 1px solid var(--clr-border-light);
+}
+
+.appointments-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-starred {
+  border: 1px solid var(--clr-btn-bg-light);
+  color: var(--clr-btn-bg-light);
+  background-color: transparent;
+  padding: 0.2em 1em;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+.appointments-list {
+  padding-inline-start: 0;
+  margin-block: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5em;
+}
